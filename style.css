@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Alegreya";
+  --font-eraser-dust: "EraserDust", sans-serif;
+  --font-content: "AlegreyaSansRegular";
+  --font-heading: "AlegreyaSansBold";
+
+  --color-paper: #e9d4ba;
+  --color-paper-border: #d6bba1;
+  --color-book-cover: #075a5f;
+}
+
+@font-face {
+  font-family: "EraserDust";
+  src: url('/fonts/eraser/EraserDust.ttf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: "Alegreya";
+  src: url('/fonts/Alegreya/Alegreya-VariableFont_wght.ttf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: "AlegreyaSansBold";
+  src: url('/fonts/Alegreya_Sans/AlegreyaSans-Bold.ttf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: "AlegreyaSansRegular";
+  src: url('/fonts/Alegreya_Sans/AlegreyaSans-Regular.ttf') format('truetype');
+  font-style: normal;
+}
