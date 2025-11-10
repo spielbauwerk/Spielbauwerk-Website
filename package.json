@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "add-domain": "echo \"www.spielbauwerk.de\" > build/CNAME",
+    "add-domain": "echo www.spielbauwerk.de > dist/CNAME",
     "deploy": "npm run add-domain && gh-pages -d dist"
   },
   "devDependencies": {
