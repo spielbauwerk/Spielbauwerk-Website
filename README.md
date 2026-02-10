@@ -8,6 +8,18 @@ Contains the dev code for the website
 ### gh-pages-branch
 Contains the live website files.
 
+##
+```
+# Clone repository 
+git clone https://github.com/spielbauwerk/Spielbauwerk-Website.git
+
+# Install npm 
+sudo apt install npm
+
+# Install dependencies
+npm install
+```
+
 ## Preview while developing
 ```
 npm run dev
