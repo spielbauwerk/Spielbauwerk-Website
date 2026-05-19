@@ -1,0 +1,56 @@
+---
+const MEDIA_BASE = "/media/beast_cleaning_service";
+const IMG_BASE = `${MEDIA_BASE}/images`;
+const VIDEO_BASE = `${MEDIA_BASE}/videos`;
+
+const gallery = [
+  {
+    src: "encounter_image.jpg",
+    alt: "Monique beim Biest reinigen",
+    class: "-rotate-6",
+  },
+  {
+    src: "tool_BucketSpongefist.jpg",
+    alt: "Concept art bucket sponge fist",
+    class: "rotate-4",
+  },
+  {
+    src: "travel_image.jpg",
+    alt: "Monique traveling",
+    class: "rotate-12",
+  },
+  {
+    src: "tool_WaterJetpackBlaster_02.jpg",
+    alt: "Jetpack concept art",
+    class: "-rotate-2",
+  },
+];
+---
+
+<section>
+
+  <!-- VIDEO -->
+  <div class="mx-5 my-30">
+    <video
+      class="w-full border-10 rounded-xs shadow-xl"
+      src={`${VIDEO_BASE}/v0_0_1.mp4`}
+      controls
+    ></video>
+  </div>
+
+  <!-- GALLERY -->
+  <div class="mt-10">
+    <div class="flex flex-wrap justify-center gap-4">
+
+      {gallery.map((img) => (
+        <img
+          src={`${IMG_BASE}/${img.src}`}
+          alt={img.alt}
+          class={`max-h-100 object-contain shadow-xl ${img.class}`}
+        />
+      ))}
+
+    </div>
+  </div>
+
+</section>

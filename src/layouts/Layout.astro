@@ -1,0 +1,25 @@
+---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpg" href="/fav.jpg" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="generator" content={Astro.generator} />
+    <title>Spielbauwerk</title>
+  </head>
+  
+  <body class="bg-[url(/background_01.jpg)] h-screen bg-cover bg-center bg-fixed">
+    <div class="max-w-screen-xl mt-20 mx-auto p-10 rounded-2xl bg-paper border-4 border-paper-border drop-shadow-[0_0_25px] bg-paper/95 backdrop-blur-sm">
+      <Header/>
+      <main class="h-full">
+        <slot />
+      </main>
+      <Footer/>
+    </div>
+  </body>
+  </html>

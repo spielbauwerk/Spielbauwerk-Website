@@ -1,7 +1,7 @@
 # Spielbauwerk Website
 Code for the Spielbauwerk website (https://www.spielbauwerk.de/).
 
-Currently this project uses vite with plain html and css later for a more complex website we could switch to astro or something like that.
+Currently this project uses astro
 ### main-branch 
 Contains the dev code for the website
 
