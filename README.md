@@ -13,6 +13,17 @@ The spielbauwerk domain can be configured in informaniak settings under web & do
 
 Normally, you only work on `main`. The live website in `gh-pages` branch can be updated using a command.
 
+## Project structure
+
+- **`src/`** – Contains the main source code of the website
+- **`src/components/`** – Reusable elements like footer, navigationbar etc
+- **`src/pages/`** – The website's pages
+- **`src/layouts/`** – Page layout are used by pages to define their common structure.
+- **`src/styles/global.css`** – Global CSS rules like fonts, but normally you define styles directly in the code.
+- **`public/`** – Static files such as images, fonts, or other assets that are copied directly to the final website.
+
+See [Astro documentation](https://docs.astro.build/) for detail descriptions.
+
 ## Setup
 
 ### 1. Clone the repository
